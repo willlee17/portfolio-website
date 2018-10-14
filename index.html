@@ -16,26 +16,444 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
-    <h1>Welcome to my portfolio page</h1>
-
-    <p id="main">Paragraph with the id of main</p>
-    <i class="fa fa-bath fa-4x"></i>
-
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">&nbsp;</div>
     </div>
 
+    <!-- Home Section Start -->
+    <section id="home">
+      <!-- Background Photo  -->
+      <img id="background-photo" src="./img/background/background.jpg" alt="background photo">
+
+      <!-- Overlay  -->
+      <div id="home-overlay"></div>
+
+      <!-- Home Content -->
+      <div id="home-content">
+        <div id="home-content-inner" class="text-center">
+          <div id="home-heading">
+            <h1 id="home-heading-1">
+                Welcome to my Website
+            </h1>
+            <br/>
+          </div>
+          <div id="home-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et assumenda, deleniti harum officia quo voluptatem ullam voluptatum velit voluptatibus aut accusantium alias ducimus iste molestiae minima, commodi, aliquam illo temporibus!</p>
+          </div>
+          <div id="home-button">
+            <a class="btn btn-general btn-home" role="button" href="#about" title="Let's Go!">Let's Go!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow Down -->
+      <a href="#about" id="arrow-down">
+        <i class="fa fa-angle-down"></i>
+      </a>
+
+      <!-- Home Section End -->
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div id="about-1">
+        <div class="content-box-lg">
+          <div class="container">
+            <div class="row justify-content-end">
+              <!-- About Me -->
+              <div class="col-md-7">
+                <div id="about-left">
+                  <div class="vertical-heading">
+                    <h5>About Me</h5>
+                    <h2>William K. Lee</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat quibusdam provident accusantium ex repellendus quis, perspiciatis delectus et facilis deleniti quos minus repellat ab! Expedita impedit sapiente dolorum, harum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat quibusdam provident accusantium ex repellendus quis, perspiciatis delectus et facilis deleniti quos minus repellat ab! Expedita impedit sapiente dolorum, harum.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Picture of Me -->
+              <div class="col-md-5">
+                <div id="about-right">
+                  <img id="about-photo" class="img-responsive" src="./img/william.jpg" alt="User Photo Here">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="technical-skill">
+      <div class="content-box-md">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-html5"></i>
+                <hr/>
+                <h5>HTML 5</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-css3"></i>
+                <hr/>
+                <h5>CSS3</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-js-square"></i>
+                <hr/>
+                <h5>JavaScript</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-react"></i>
+                <hr/>
+                <h5>ReactJS</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-react"></i>
+                <hr/>
+                <h5>ReactJS</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-react"></i>
+                <hr/>
+                <h5>ReactJS</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-react"></i>
+                <hr/>
+                <h5>ReactJS</h5>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technical-skill-item text-center">
+                <i class="fab fa-react"></i>
+                <hr/>
+                <h5>ReactJS</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="content-box-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>My Projects</h1>
+            </div>
+          </div>
+        </div>
+
+        <section id="project-wrapper">
+          <div class="container-fluid">
+            <div class="row no-gutters">
+              <!-- Project 1 -->
+              <div class="col-sm-3">
+                <div id="inline-popups-2" class="project-item">
+                  <a href="#test-popup-1" title="Add description">
+                    <img src="img/projects/evently/evently1.jpg" class="img-responsive" alt="evently1">
+                    <div class="project-item-overlay">
+                      <div class="project-item-detail text-center">
+                        <!-- Item header -->
+                        <h3>Logo</h3>
+
+                        <!-- Item Description -->
+                        <p>Project description goes here...</p>
+
+                        <!-- Button -->
+                        <a class="btn btn-primary" href="#test-popup-4" title="Learn More"></a>
+
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div id="test-popup-1" class="white-popup mfp-with-anim mfp-hide">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="por-img">
+                                <img src="img/projects/evently/evently1.jpg" alt="portfolio image" class="img-responsive"> <!--edit image-->
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="por-text">
+                                <h2>Pick Up</h2> <!--your project title-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
+                                <div class="por-text-details">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <p>Client: </p>
+                                            <p>Completed:</p>
+                                            <p>Type:</p>
+                                            <p>link:</p>
+                                        </div>
+                                        <div class="col-xs-offset-1 col-xs-7">
+                                            <p>SportsDirect</p> <!--edit here-->
+                                            <p>15/03/2018</p> <!--edit here-->
+                                            <p>Joomla Site</p> <!--edit here-->
+                                            <p>www.sportsdirect.com</p> <!--edit here-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="col-sm-3">
+                <div id="inline-popups-2" class="project-item">
+                  <a href="#test-popup-2" title="Add description">
+                    <img src="img/projects/vidtube/vidtube1.jpg" class="img-responsive" alt="vidtube1">
+                    <div class="project-item-overlay">
+                      <div class="project-item-detail text-center">
+                        <!-- Item header -->
+                        <h3>Logo</h3>
+
+                        <!-- Item Description -->
+                        <p>Project description goes here...</p>
+
+                        <!-- Button -->
+                        <a class="btn btn-primary" href="#test-popup-4" title="Learn More"></a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div id="test-popup-2" class="white-popup mfp-with-anim mfp-hide">
+                    <div class="row">
+
+                        <div class="col-md-7">
+                            <div class="por-img">
+                                <img src="img/projects/vidtube/vidtube1.jpg" alt="portfolio image" class="img-responsive"> <!--edit image-->
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="por-text">
+                                <h2>Pick Up</h2> <!--your project title-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
+                                <div class="por-text-details">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <p>Client: </p>
+                                            <p>Completed:</p>
+                                            <p>Type:</p>
+                                            <p>link:</p>
+                                        </div>
+                                        <div class="col-xs-offset-1 col-xs-7">
+                                            <p>SportsDirect</p> <!--edit here-->
+                                            <p>15/03/2018</p> <!--edit here-->
+                                            <p>Joomla Site</p> <!--edit here-->
+                                            <p>www.sportsdirect.com</p> <!--edit here-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="col-sm-3">
+                <div id="inline-popups-3" class="project-item">
+                  <a href="#test-popup-3" title="Add description">
+                    <img src="img/projects/collabdocs/collabdocs1.png" class="img-responsive" alt="collabdocs1">
+                    <div class="project-item-overlay">
+                      <div class="project-item-detail text-center">
+                        <!-- Item header -->
+                        <h3>Logo</h3>
+
+                        <!-- Item Description -->
+                        <p>Project description goes here...</p>
+
+                        <!-- Button -->
+                        <a class="btn btn-primary" href="#test-popup-4" title="Learn More"></a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div id="test-popup-3" class="white-popup mfp-with-anim mfp-hide">
+                    <div class="row">
+
+                        <div class="col-md-7">
+                            <div class="por-img">
+                                <img src="img/projects/collabdocs/collabdocs1.png" alt="portfolio image" class="img-responsive"> <!--edit image-->
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="por-text">
+                                <h2>Pick Up</h2> <!--your project title-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
+                                <div class="por-text-details">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <p>Client: </p>
+                                            <p>Completed:</p>
+                                            <p>Type:</p>
+                                            <p>link:</p>
+                                        </div>
+                                        <div class="col-xs-offset-1 col-xs-7">
+                                            <p>SportsDirect</p> <!--edit here-->
+                                            <p>15/03/2018</p> <!--edit here-->
+                                            <p>Joomla Site</p> <!--edit here-->
+                                            <p>www.sportsdirect.com</p> <!--edit here-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project 4 -->
+              <div class="col-sm-3">
+                <div id="inline-popups-4" class="project-item">
+                  <a href="#test-popup-4" title="Add description">
+                    <img src="img/projects/pickup/pickup1.jpg" class="img-responsive" alt="pickup1">
+                    <div class="project-item-overlay">
+                      <div class="project-item-detail text-center">
+                        <!-- Item header -->
+                        <h3>Logo</h3>
+
+                        <!-- Item Description -->
+                        <p>Project description goes here...</p>
+
+                        <!-- Button -->
+                        <a class="btn btn-primary" href="#test-popup-4" title="Learn More"></a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div id="test-popup-4" class="white-popup mfp-with-anim mfp-hide">
+                    <div class="row">
+
+                        <div class="col-md-7">
+                            <div class="por-img">
+                                <img src="img/projects/pickup/pickup1.jpg" alt="portfolio image" class="img-responsive"> <!--edit image-->
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="por-text">
+                                <h2>Pick Up</h2> <!--your project title-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
+                                <div class="por-text-details">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <p>Client: </p>
+                                            <p>Completed:</p>
+                                            <p>Type:</p>
+                                            <p>link:</p>
+                                        </div>
+                                        <div class="col-xs-offset-1 col-xs-7">
+                                            <p>SportsDirect</p> <!--edit here-->
+                                            <p>15/03/2018</p> <!--edit here-->
+                                            <p>Joomla Site</p> <!--edit here-->
+                                            <p>www.sportsdirect.com</p> <!--edit here-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+      <div class="content-box-md">
+        <h1>Contact Me</h1>
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-sm-3">
+              <div class="contact-box text-center">
+                <i class="fas fa-home"></i>
+                <h5>Location</h5>
+                <p>1534 19th Ave, San Francisco, USA</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="contact-box text-center">
+                <i class="fas fa-mobile"></i>
+                <h5>Phone</h5>
+                <p>(215) 687-7748</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="contact-box text-center">
+                <i class="far fa-envelope"></i>
+                <h5>Email</h5>
+                <p>willlee@alumni.upenn.edu</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="contact-box text-center">
+                <i class="fas fa-comment-dots"></i>
+                <h5>Social Media</h5>
+                <a href="https://www.linkedin.com/in/williamlee671/">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/willlee17/">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer  class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              William K. Lee &copy; 2018
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Magnific Popup -->
+  <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Custom JS -->
   <script src="js/script.js" type="text/javascript">
 
