@@ -39,3 +39,46 @@ $(document).ready(function() {
     });
   }
 )
+
+// Navigation
+$(document).ready(function() {
+  showHideNav();
+
+  $(window).scroll(function() {
+      showHideNav();
+  })
+
+  function showHideNav() {
+    if( $(window).scrollTop() > 50 ) {
+      $('nav').addClass("white-nav-top");
+    } else {
+      $('nav').removeClass("white-nav-top");
+    }
+  }
+})
+
+// Smooth Scrolling
+$(document).ready(function() {
+   $('a.smooth-scroll').click(function(event) {
+     event.preventDefault();
+     var section_id = $(this).attr("href");
+
+     $("html, body").animate({
+       scrollTop: $(section_id).offset().top - 50
+     }, 1250);
+   })
+})
+
+
+// Wow JS
+$(document).ready(function() {
+  new WOW().init();
+})
+
+$(window).on('load', function() {
+  $('#home-heading-1').addClass("animated fadeInDown");
+  $('#home-text').addClass("animated zoomIn");
+  $('#home-button').addClass("animated fadeInUp");
+  $('#arrow-down i').addClass("animated fadeInDown infinite");
+  $('#navbar').addClass("animated bounceInRight");
+})

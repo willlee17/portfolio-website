@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="William K. Lee's Portfolio Website">
 
     <title>Portfolio Page Draft 1</title>
 
@@ -20,15 +21,55 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
 
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="75">
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">&nbsp;</div>
     </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-md white-nav-top">
+        <div class="container-fluid">
+              <!-- Name -->
+            <a href="#about" class="navbar-brand smooth-scroll">
+              <h2>William Lee</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-me" aria-controls="collapse-me" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                 <i class="fas fa-ellipsis-v"></i>
+              </span>
+            </button>
+              <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="collapse-me">
+              <ul class="navbar-nav  ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#technical-skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
 
     <!-- Home Section Start -->
     <section id="home">
@@ -36,7 +77,10 @@
       <img id="background-photo" src="./img/background/background.jpg" alt="background photo">
 
       <!-- Overlay  -->
-      <div id="home-overlay"></div>
+      <div id="home-overlay">
+        <!-- Particles -->
+        <div id="particles-js" class="wow fadeIn"></div>
+      </div>
 
       <!-- Home Content -->
       <div id="home-content">
@@ -51,13 +95,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et assumenda, deleniti harum officia quo voluptatem ullam voluptatum velit voluptatibus aut accusantium alias ducimus iste molestiae minima, commodi, aliquam illo temporibus!</p>
           </div>
           <div id="home-button">
-            <a class="btn btn-general btn-home" role="button" href="#about" title="Let's Go!">Let's Go!</a>
+            <a class="btn btn-general btn-home smooth-scroll" role="button" href="#about" title="Let's Go!">Let's Go!</a>
           </div>
         </div>
       </div>
 
       <!-- Arrow Down -->
-      <a href="#about" id="arrow-down">
+      <a href="#about" id="arrow-down" class="smooth-scroll">
         <i class="fa fa-angle-down"></i>
       </a>
 
@@ -71,7 +115,7 @@
           <div class="container">
             <div class="row justify-content-end">
               <!-- About Me -->
-              <div class="col-md-7">
+              <div class="col-md-7 wow slideInLeft">
                 <div id="about-left">
                   <div class="vertical-heading">
                     <h5>About Me</h5>
@@ -82,7 +126,7 @@
                 </div>
               </div>
               <!-- Picture of Me -->
-              <div class="col-md-5">
+              <div class="col-md-5 wow slideInUp">
                 <div id="about-right">
                   <img id="about-photo" class="img-responsive" src="./img/william.jpg" alt="User Photo Here">
                 </div>
@@ -99,57 +143,58 @@
     <section id="technical-skill">
       <div class="content-box-md">
         <div class="container">
+          <h1 class="wow bounceInRight">Technical Skills</h1>
           <div class="row justify-content-around">
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-html5"></i>
                 <hr/>
-                <h5>HTML 5</h5>
+                <h5>HTML5</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3  wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-css3"></i>
                 <hr/>
                 <h5>CSS3</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3  wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-js-square"></i>
                 <hr/>
                 <h5>JavaScript</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-react"></i>
                 <hr/>
                 <h5>ReactJS</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-react"></i>
                 <hr/>
                 <h5>ReactJS</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-react"></i>
                 <hr/>
                 <h5>ReactJS</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-react"></i>
                 <hr/>
                 <h5>ReactJS</h5>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow bounceInDown">
               <div class="technical-skill-item text-center">
                 <i class="fab fa-react"></i>
                 <hr/>
@@ -167,7 +212,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h1>My Projects</h1>
+              <h1 class="wow bounceInRight">My Projects</h1>
             </div>
           </div>
         </div>
@@ -176,7 +221,7 @@
           <div class="container-fluid">
             <div class="row no-gutters">
               <!-- Project 1 -->
-              <div class="col-sm-3">
+              <div class="col-sm-3 wow fadeInRight">
                 <div id="inline-popups-2" class="project-item">
                   <a href="#test-popup-1" title="Add description">
                     <img src="img/projects/evently/evently1.jpg" class="img-responsive" alt="evently1">
@@ -228,7 +273,7 @@
                 </div>
               </div>
               <!-- Project 2 -->
-              <div class="col-sm-3">
+              <div class="col-sm-3 wow fadeInRight">
                 <div id="inline-popups-2" class="project-item">
                   <a href="#test-popup-2" title="Add description">
                     <img src="img/projects/vidtube/vidtube1.jpg" class="img-responsive" alt="vidtube1">
@@ -280,7 +325,7 @@
                 </div>
               </div>
               <!-- Project 3 -->
-              <div class="col-sm-3">
+              <div class="col-sm-3 wow fadeInRight">
                 <div id="inline-popups-3" class="project-item">
                   <a href="#test-popup-3" title="Add description">
                     <img src="img/projects/collabdocs/collabdocs1.png" class="img-responsive" alt="collabdocs1">
@@ -332,7 +377,7 @@
                 </div>
               </div>
               <!-- Project 4 -->
-              <div class="col-sm-3">
+              <div class="col-sm-3 wow fadeInRight">
                 <div id="inline-popups-4" class="project-item">
                   <a href="#test-popup-4" title="Add description">
                     <img src="img/projects/pickup/pickup1.jpg" class="img-responsive" alt="pickup1">
@@ -394,31 +439,31 @@
     <!-- Contact Me -->
     <section id="contact">
       <div class="content-box-md">
-        <h1>Contact Me</h1>
+        <h1 class="wow bounceInRight">Contact Me</h1>
         <div class="container">
           <div class="row justify-content-around">
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow fadeInLeft">
               <div class="contact-box text-center">
                 <i class="fas fa-home"></i>
                 <h5>Location</h5>
                 <p>1534 19th Ave, San Francisco, USA</p>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow fadeInLeft">
               <div class="contact-box text-center">
                 <i class="fas fa-mobile"></i>
                 <h5>Phone</h5>
                 <p>(215) 687-7748</p>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow fadeInLeft">
               <div class="contact-box text-center">
                 <i class="far fa-envelope"></i>
                 <h5>Email</h5>
-                <p>willlee@alumni.upenn.edu</p>
+                <p>willlee@alumni. upenn.edu</p>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-3 wow fadeInLeft">
               <div class="contact-box text-center">
                 <i class="fas fa-comment-dots"></i>
                 <h5>Social Media</h5>
@@ -454,6 +499,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Magnific Popup -->
   <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Wow JS -->
+  <script src ="js/wow/wow.min.js"></script>
+  <!-- Particles -->
+  <script src="js/particles/particles.js"></script>
+  <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+    });
+  </script>
   <!-- Custom JS -->
   <script src="js/script.js" type="text/javascript">
 
