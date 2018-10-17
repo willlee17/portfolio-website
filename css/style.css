@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  color: #5482E5;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
@@ -77,7 +81,7 @@ section {
 }
 
 .white-nav-top ul.navbar-nav > li > a:hover {
-  color: #A5D8FF;
+  color: #5482E5;
 }
 
 
@@ -94,9 +98,13 @@ ul.navbar-nav > li > a {
   color: #fff;
 }
 
+.navbar-brand h2:hover {
+  color: #5482E5;
+}
+
 ul.navbar-nav > li > a:hover {
   background: none;
-  color: #A5D8FF;
+  color: #5482E5;
 }
 
 ul.navbar-nav > li > a:focus {
@@ -104,7 +112,7 @@ ul.navbar-nav > li > a:focus {
 }
 
 .white-nav-top ul.navbar-nav > li > a.active {
-  color: #A5D8FF;
+  color: #5482E5;
   font-weight: 500;
 }
 
@@ -170,8 +178,8 @@ ul.navbar-nav > li > a:focus {
 
 .btn-home:hover, .btn-home:focus {
   color: #fff;
-  background-color: #A5D8FF;
-  border: 1px solid #A5D8FF;
+  background-color: #5482E5;
+  border: 1px solid #5482E5;
 }
 
 /* Background Photo */
@@ -202,7 +210,7 @@ ul.navbar-nav > li > a:focus {
 }
 
 #arrow-down:hover, #arrow-down:focus {
-  color: #A5D8FF;
+  color: #5482E5;
 }
 
 /* About Section */
@@ -271,7 +279,7 @@ ul.navbar-nav > li > a:focus {
 }
 
 .technical-skill-item:hover {
-  background-color: #A5D8FF;
+  background-color: #5482E5;
   transform: scale(1.1);
 }
 
@@ -415,7 +423,7 @@ ul.navbar-nav > li > a:focus {
 }
 
 .contact-box:hover {
-  background-color: #A5D8FF;
+  background-color: #5482E5;
   transform: scale(1.1);
 }
 
