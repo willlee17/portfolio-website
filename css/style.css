@@ -248,6 +248,10 @@ ul.navbar-nav > li > a:focus {
   padding: 100px 0px;
 }
 
+#technical-skill h5 {
+  overflow: hidden;
+}
+
 .technical-skill-item {
   background-color: #fff;
   padding: 30px 30px;
@@ -283,8 +287,8 @@ ul.navbar-nav > li > a:focus {
 
 /* Smoother transitions  */
 .technical-skill-item, .technical-skill-item:hover i, .technical-skill-item:hover h5 {
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 
@@ -336,8 +340,8 @@ ul.navbar-nav > li > a:focus {
   left: 0;
   background: rgba(14, 14, 17, 0.9);
   opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .project-item-detail {
@@ -355,8 +359,8 @@ ul.navbar-nav > li > a:focus {
   padding: 0;
   -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;;
 }
 
 .project-item-detail p {
@@ -366,8 +370,8 @@ ul.navbar-nav > li > a:focus {
   padding: 0;
   -webkit-transform: translateY(20%);
   transform: translateY(20%);
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-item:hover .project-item-detail h3{
