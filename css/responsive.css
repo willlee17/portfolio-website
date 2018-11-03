@@ -6,7 +6,22 @@
 
 /* Medium Devices */
 @media(min-width: 992px) and (max-width: 1199px) {
+  #technical-skill h5 {
+    font-size: 15px;
+  }
 
+  #contact h5 {
+    font-size: 15px;
+  }
+
+  #contact i {
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  #contact p {
+    font-size: 10px;
+  }
 }
 
 /* Small Devices */

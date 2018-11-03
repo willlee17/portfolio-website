@@ -1,7 +1,7 @@
 // Preloader
 $(window).on('load', function() {
-  $('#status').fadeOut()
-  $('#preloader').delay(550).fadeOut('slow')
+  $('#status').delay(1000).fadeOut(700)
+  $('#preloader').delay(1050).fadeOut(700)
 })
 
 // Projects
