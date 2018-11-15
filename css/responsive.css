@@ -38,6 +38,11 @@
     font-size: 24px;
     margin-bottom: 5px;
   }
+
+  #technical-skill h5 {
+    font-size: 13px;
+  }
+
 }
 
 /* Extra Small Devices */
@@ -59,7 +64,7 @@
   }
 
   #technical-skill h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #contact h5 {
